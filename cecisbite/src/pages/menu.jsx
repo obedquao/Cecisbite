@@ -9,7 +9,7 @@ export default function Menu() {
       <section className="pt-17">
         <div className="w-full h-[30vh] relative mb-20 flex items-center">
           <img
-            src="/images/menuhero.png"
+            src="/images/menuhero.webp"
             alt="about banner"
             className="w-full h-full object-cover inset-0 absolute"
           />
