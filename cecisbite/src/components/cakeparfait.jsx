@@ -11,7 +11,7 @@ const ParfaitCard = () => {
     date: "",
   });
 
-  const WHATSAPP_NUMBER = "233206861112";
+  const WHATSAPP_NUMBER = "233248967727";
 
   // Calculate total price: Quantity * 50
   const totalPrice = formData.quantity * UNIT_PRICE;

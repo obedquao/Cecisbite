@@ -16,7 +16,7 @@ const CupcakeCard = () => {
     date: "",
   });
 
-  const WHATSAPP_NUMBER = "233206861112";
+  const WHATSAPP_NUMBER = "233248967727";
   const currentPrice = CUPCAKE_PRICES[formData.quantity];
 
   const handleChange = (e) => {

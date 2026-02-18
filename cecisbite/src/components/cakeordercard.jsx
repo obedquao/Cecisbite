@@ -77,7 +77,7 @@ const CakeOrderCard = () => {
     date: "",
   });
 
-  const WHATSAPP_NUMBER = "233206861112";
+  const WHATSAPP_NUMBER = "233248967727";
 
   // Dynamic lookup based on Shape, Size, and Layers
   const currentPrice =
