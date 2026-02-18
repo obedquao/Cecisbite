@@ -7,8 +7,8 @@ export default function Contact() {
       <section className="pt-17">
         <div className="w-full h-[40vh] relative mb-20 flex justify-center items-center">
           <img
-            src="/images/3cups.jpg"
-            alt="about banner"
+            src="/images/3cups.webp"
+            alt="contact page banner"
             className="w-full h-full object-cover inset-0 absolute"
           />
           <div className="bg-black/40 inset-0 w-full z-20 absolute h-full" />
