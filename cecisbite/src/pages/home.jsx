@@ -126,7 +126,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, ease: "easeOut" }}
             viewport={{ once: true }}
-            src="/images/p2.jpg"
+            src="/images/p2.webp"
             alt="cupcake image"
             className="w-full h-64 object-cover"
           />

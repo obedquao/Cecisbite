@@ -244,12 +244,12 @@ export default function School() {
           learn to open a new business or just for the sake of baking
         </p>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-1 md:gap-2 md:px-24 mt-10">
-          <img src="/images/grad1.JPG" alt="graduation 1" loading="lazy" />
-          <img src="/images/grad2.JPG" alt="graduation 2" loading="lazy" />
-          <img src="/images/grad3.JPG" alt="graduation 3" loading="lazy" />
-          <img src="/images/grad4.JPG" alt="graduation 4" loading="lazy" />
-          <img src="/images/grad5.JPG" alt="graduation 5" loading="lazy" />
-          <img src="/images/grad6.JPG" alt="graduation 6" loading="lazy" />
+          <img src="/images/grad1.webp" alt="graduation 1" loading="lazy" />
+          <img src="/images/grad2.webp" alt="graduation 2" loading="lazy" />
+          <img src="/images/grad3.webp" alt="graduation 3" loading="lazy" />
+          <img src="/images/grad4.webp" alt="graduation 4" loading="lazy" />
+          <img src="/images/grad5.webp" alt="graduation 5" loading="lazy" />
+          <img src="/images/grad6.webp" alt="graduation 6" loading="lazy" />
         </div>
         <a
           href="https://photos.google.com/share/AF1QipMxgiEPpBWgdwoMHpjF6VGu6v8LtyXcf5N-OQVZQ8BufXpv2qFZ3WgIGxmszHml4w?key=RVl3aFZvUndhdTd1Uk5SdTlDNHRyNDVyLUg0RkRB"
