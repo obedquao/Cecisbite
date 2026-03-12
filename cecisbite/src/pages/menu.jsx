@@ -1,9 +1,40 @@
 import CakeOrderCard from "../components/cakeordercard";
 import CupcakeCard from "../components/cupcakeordercard";
 import ParfaitCard from "../components/cakeparfait";
+import FoodPackage from "../components/foodpackage";
 import { motion } from "motion/react";
 
 export default function Menu() {
+  const foodCardData = [
+    {
+      id: 1,
+      image: "/images/food1.webp",
+      price: "GHC 600",
+      details:
+        "Jollof Rice, Assorted noddles stir fry, Chicken / fish, Ghanaian salad, Spring rolls/ samosa, fruit, Juice and water",
+    },
+    {
+      id: 2,
+      image: "/images/food2.webp",
+      price: "GHC 750",
+      details:
+        "Jollof Rice, Assorted Fried Rice, Chicken/ Fish, Gizzard, Spring rolls/ Samosa, Fruit Juice, water, Ghanaian Salad, fresh Fruits",
+    },
+    {
+      id: 3,
+      image: "/images/food3.webp",
+      price: "GHC 900",
+      details:
+        "Jollof Rice, Assorted Fried Rice, Chicken/ Fish, Gizzard, Spring rolls/ Samosa, Fruit Juice, water, Ghanaian Salad, fresh Fruits",
+    },
+    {
+      id: 4,
+      image: "/images/food4.webp",
+      price: "GHC 1300",
+      details:
+        "Jollof Rice, Assorted Fried Rice, Chicken/ Fish, Gizzard, Spring rolls/ Samosa, Fruit Juice, water, Ghanaian Salad, fresh Fruits",
+    },
+  ];
   return (
     <>
       <section className="pt-17">
@@ -160,6 +191,16 @@ export default function Menu() {
             you're planning a party, corporate event, or special occasion, we
             have the perfect package for you.
           </p>
+          <div className="grid grid-cols-1 md:grid-cols-4 place-items-center gap-6 px-2">
+            {foodCardData.map((item) => (
+              <FoodPackage
+                key={item.id}
+                image={item.image}
+                price={item.price}
+                details={item.details}
+              />
+            ))}
+          </div>
         </section>
       </section>
     </>

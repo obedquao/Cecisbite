@@ -99,15 +99,42 @@ const ParfaitCard = () => {
               <label className="text-[10px] font-bold text-gray-400 uppercase ml-1">
                 Quantity
               </label>
-              <input
-                required
-                type="number"
-                name="quantity"
-                min="1"
-                value={formData.quantity}
-                className="w-full p-3 bg-gray-50 rounded-xl text-sm outline-none border border-transparent focus:border-purple-300 transition-all"
-                onChange={handleChange}
-              />
+              <div className="flex items-center border rounded-xl overflow-hidden w-32 bg-gray-50">
+                <button
+                  type="button"
+                  onClick={() =>
+                    setFormData({
+                      ...formData,
+                      quantity: Math.max(1, formData.quantity - 1),
+                    })
+                  }
+                  className="px-3 py-2 text-lg font-bold text-gray-600 hover:bg-gray-200"
+                >
+                  −
+                </button>
+
+                <input
+                  type="number"
+                  name="quantity"
+                  min="1"
+                  value={formData.quantity}
+                  onChange={handleChange}
+                  className="w-full text-center bg-transparent outline-none"
+                />
+
+                <button
+                  type="button"
+                  onClick={() =>
+                    setFormData({
+                      ...formData,
+                      quantity: formData.quantity + 1,
+                    })
+                  }
+                  className="px-3 py-2 text-lg font-bold text-gray-600 hover:bg-gray-200"
+                >
+                  +
+                </button>
+              </div>
             </div>
           </div>
 
