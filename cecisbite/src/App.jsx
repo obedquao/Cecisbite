@@ -6,11 +6,13 @@ import Menu from "./pages/menu.jsx";
 import School from "./pages/school.jsx";
 import Contact from "./pages/contact.jsx";
 import Footer from "./components/footer.jsx";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
