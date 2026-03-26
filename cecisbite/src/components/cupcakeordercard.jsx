@@ -4,9 +4,9 @@ const CupcakeCard = () => {
   // 1. Cupcake Price Matrix: [Quantity]
   const CUPCAKE_PRICES = {
     "Box of 4": 150,
-    "Box of 6": 180,
-    "Box of 12": 300,
-    "Box of 24": 350,
+    "Box of 6": 200,
+    "Box of 12": 350,
+    "Box of 24": 550,
   };
 
   const [formData, setFormData] = useState({

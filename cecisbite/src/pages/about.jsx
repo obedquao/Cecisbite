@@ -180,7 +180,7 @@ export default function About() {
             >
               <Link to="/menu">
                 <button className="py-2 px-5 bg-secondary text-white font-bold font-inter rounded-xl hover:cursor-pointer transition-all mt-8">
-                  Check out menu
+                  Explore our menu
                 </button>
               </Link>
               <Link to="/school">

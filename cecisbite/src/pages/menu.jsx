@@ -2,39 +2,15 @@ import CakeOrderCard from "../components/cakeordercard";
 import CupcakeCard from "../components/cupcakeordercard";
 import ParfaitCard from "../components/cakeparfait";
 import FoodPackage from "../components/foodpackage";
+import CakeItem from "../components/item";
+import bentodata from "../data/bentodata";
 import { motion } from "motion/react";
+import foodCardData from "../data/foodcarddata";
+import readyCakes from "../data/readyCakes";
+import Lottie from "lottie-react";
+import milkyAnimation from "../assets/doughnutanimation.json";
 
 export default function Menu() {
-  const foodCardData = [
-    {
-      id: 1,
-      image: "/images/food1.webp",
-      price: "GHC 600",
-      details:
-        "Jollof Rice, Assorted noddles stir fry, Chicken / fish, Ghanaian salad, Spring rolls/ samosa, fruit, Juice and water",
-    },
-    {
-      id: 2,
-      image: "/images/food2.webp",
-      price: "GHC 750",
-      details:
-        "Jollof Rice, Assorted Fried Rice, Chicken/ Fish, Gizzard, Spring rolls/ Samosa, Fruit Juice, water, Ghanaian Salad, fresh Fruits",
-    },
-    {
-      id: 3,
-      image: "/images/food3.webp",
-      price: "GHC 900",
-      details:
-        "Jollof Rice, Assorted Fried Rice, Chicken/ Fish, Gizzard, Spring rolls/ Samosa, Fruit Juice, water, Ghanaian Salad, fresh Fruits",
-    },
-    {
-      id: 4,
-      image: "/images/food4.webp",
-      price: "GHC 1300",
-      details:
-        "Jollof Rice, Assorted Fried Rice, Chicken/ Fish, Gizzard, Spring rolls/ Samosa, Fruit Juice, water, Ghanaian Salad, fresh Fruits",
-    },
-  ];
   return (
     <>
       <section className="pt-17">
@@ -102,7 +78,8 @@ export default function Menu() {
             <p className="p-3 text-lg">
               Scroll down to what you want to purchase{" "}
               <span className="font-black">
-                (cupcakes, Parfait, cakes or food packages)
+                (Bento packages,Milky Doughnuts, cupcakes, Parfait, Custom Cake
+                orders or food packages)
               </span>
             </p>
           </motion.div>
@@ -115,8 +92,8 @@ export default function Menu() {
           >
             <h2 className="text-primary p-10 text-5xl font-extrabold">2</h2>
             <p className="p-3 text-lg">
-              Fill the Form. Prices are displayed beneath. So you get to see
-              everything
+              For Cupcakes, Parfaits or Custom Cake Orders, fill the Form.
+              Prices are displayed beneath. So you get to see everything.
             </p>
           </motion.div>
           <motion.div
@@ -128,9 +105,9 @@ export default function Menu() {
           >
             <h2 className="text-primary p-10 text-5xl font-extrabold">3</h2>
             <p className="p-3 text-lg">
-              Tap “Order on WhatsApp” and your order details will appear in the
-              chat. Just press send to continue. Want adjustments or have an
-              inspiration photo? Feel free to message us, we’ll gladly help.
+              Taping "Order Now" or “Order on WhatsApp” will take you to
+              whatsApp where your order details will be displayed in the chat.
+              Just press send to continue.
             </p>
           </motion.div>
           <motion.div
@@ -142,7 +119,9 @@ export default function Menu() {
           >
             <h2 className="text-primary p-10 text-5xl font-extrabold">4</h2>
             <p className="p-3 text-lg">
-              Confirm details and payment with our team
+              Want to make adjustments or have an inspiration photo? Feel free
+              to message us, we’ll gladly help. Confirm details and payment with
+              our team
             </p>
           </motion.div>
         </div>
@@ -167,15 +146,76 @@ export default function Menu() {
           Payment confirms Order!
         </motion.p>
       </section>
+      <section className="py-10 space-y-5 bg-gray-50 ">
+        <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
+          Ready To Go Cakes
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y  divide-gray-200">
+          {readyCakes.map((item) => (
+            <CakeItem
+              name={item.name}
+              image={item.image}
+              price={item.price}
+              details={item.details}
+            />
+          ))}
+        </div>
+      </section>
+      <section className="py-10 space-y-5 bg-gray-50 ">
+        <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
+          Our Bento Packages
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y  divide-gray-200">
+          {bentodata.map((item) => (
+            <CakeItem
+              name={item.name}
+              image={item.image}
+              price={item.price}
+              details={item.details}
+            />
+          ))}
+        </div>
+      </section>
+      <section className="pb-10 px-6 md:px-16 mt-20">
+        <div className="rounded-3xl w-full  h-[20vh] md:h-80  overflow-hidden">
+          <Lottie
+            animationData={milkyAnimation}
+            loop={true}
+            className="w-full h-full  object-cover"
+          />
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-3 md:px-40 divide-y md:divide-y-0 divide-x divide-gray-200 mt-10">
+          <CakeItem
+            image="/images/cakes/d3.webp"
+            name="Milky Doughnuts (3 Pieces)"
+            price="GH₵ 60"
+            details="Available Only On Wednesdays"
+          />
+          <CakeItem
+            image="/images/cakes/d6.webp"
+            name="Milky Doughnuts (6 Pieces)"
+            price="GH₵ 120"
+            details="Available Only On Wednesdays"
+          />
+          <CakeItem
+            image="/images/cakes/d9.webp"
+            name="Milky Doughnuts (9 Pieces)"
+            price="GH₵ 180"
+            details="Available Only On Wednesdays"
+          />
+        </div>
+      </section>
+
       <section className="px-1 md:px-16 py-16 mt-20 bg-gray-100">
         <section className="mt-10">
           <h1 className="text-center text-4xl text-primary font-bold font-playfair my-5 ">
-            Parfait, Cupcakes & Cakes
+            Custom Orders
           </h1>
           <p className=" text-secondary/70 font-poppins px-6 md:px-0 max-w-4xl text-center mx-auto mb-10">
             Planning a wedding cake, want a custom design, or not sure what cake
             fits your occasion? Message or call us — we’re happy to guide you.
           </p>
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   ">
             <ParfaitCard />
             <CupcakeCard />

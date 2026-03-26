@@ -98,7 +98,7 @@ export default function Home() {
           viewport={{ once: true }}
           className="text-center text-4xl font-bold font-playfair text-secondary"
         >
-          Our Best Selling Cakes
+          Our Best Selling Products
         </motion.h1>
         <motion.p
           initial={{ opacity: 0, y: 40 }}
@@ -107,8 +107,8 @@ export default function Home() {
           viewport={{ once: true }}
           className="mt-6 max-w-6xl mx-auto text-center"
         >
-          These are some of our most-loved cakes, carefully crafted to look
-          stunning and taste unforgettable.
+          These are some of our most-loved food, carefully crafted to taste
+          great and be unforgettable.
         </motion.p>
         {/* Put some of the purchaseable cakes here*/}
         <div className="grid grid-cols-2 md:grid-cols-3 gap-2 mt-8">

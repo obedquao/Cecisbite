@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const ParfaitCard = () => {
   // Fixed unit price
-  const UNIT_PRICE = 50;
+  const UNIT_PRICE = 60;
 
   const [formData, setFormData] = useState({
     name: "",
@@ -91,6 +91,9 @@ const ParfaitCard = () => {
                 <option>Chocolate</option>
                 <option>Vanilla</option>
                 <option>Oreo</option>
+                <option>Lemon</option>
+                <option>Coconut</option>
+                <option>Strawberry</option>
               </select>
             </div>
 
