@@ -76,10 +76,33 @@ export default function Menu() {
           >
             <h2 className="text-primary p-10 text-5xl font-extrabold">1</h2>
             <p className="p-3 text-lg">
-              Scroll down to what you want to purchase{" "}
+              Tap or Scroll down to what you want to purchase{" "}
               <span className="font-black">
-                (Bento packages,Milky Doughnuts, cupcakes, Parfait, Custom Cake
-                orders or food packages)
+                (
+                <a href="#custom" className="underline text-primary">
+                  Custom Cake
+                </a>
+                ,{" "}
+                <a href="#bento" className="underline text-primary">
+                  Bento packages
+                </a>
+                ,{" "}
+                <a href="#milkydoughnuts" className="underline text-primary">
+                  Milky Doughnuts
+                </a>
+                ,{" "}
+                <a href="#custom" className="underline text-primary">
+                  cupcakes
+                </a>
+                ,{" "}
+                <a href="#custom" className="underline text-primary">
+                  Parfait
+                </a>{" "}
+                or ,{" "}
+                <a href="#foodpackages" className="underline text-primary">
+                  Food Packages
+                </a>
+                )
               </span>
             </p>
           </motion.div>
@@ -146,7 +169,7 @@ export default function Menu() {
           Payment confirms Order!
         </motion.p>
       </section>
-      <section className="py-10 space-y-5 bg-gray-50 ">
+      <section id="readycakes" className="py-10 space-y-5 bg-gray-50 ">
         <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
           Ready To Go Cakes
         </h1>
@@ -161,7 +184,7 @@ export default function Menu() {
           ))}
         </div>
       </section>
-      <section className="py-10 space-y-5 bg-gray-50 ">
+      <section id="bento" className="py-10 space-y-5 bg-gray-50 ">
         <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
           Our Bento Packages
         </h1>
@@ -176,7 +199,7 @@ export default function Menu() {
           ))}
         </div>
       </section>
-      <section className="pb-10 px-6 md:px-16 mt-20">
+      <section id="milkydoughnuts" className="pb-10 px-6 md:px-16 mt-20">
         <div className="rounded-3xl w-full  h-[20vh] md:h-80  overflow-hidden">
           <Lottie
             animationData={milkyAnimation}
@@ -206,14 +229,25 @@ export default function Menu() {
         </div>
       </section>
 
-      <section className="px-1 md:px-16 py-16 mt-20 bg-gray-100">
+      <section id="custom" className="px-1 md:px-16 py-16 mt-20 bg-gray-100">
         <section className="mt-10">
           <h1 className="text-center text-4xl text-primary font-bold font-playfair my-5 ">
             Custom Orders
           </h1>
           <p className=" text-secondary/70 font-poppins px-6 md:px-0 max-w-4xl text-center mx-auto mb-10">
             Planning a wedding cake, want a custom design, or not sure what cake
-            fits your occasion? Message or call us — we’re happy to guide you.
+            fits your occasion?{" "}
+            <a
+              href="https://wa.me/233248967727"
+              className="underline text-primary"
+            >
+              Message us
+            </a>{" "}
+            or{" "}
+            <a href="tel:+233248967727" className="underline text-primary">
+              call us
+            </a>{" "}
+            — we’re happy to guide you.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3   ">
@@ -231,7 +265,10 @@ export default function Menu() {
             you're planning a party, corporate event, or special occasion, we
             have the perfect package for you.
           </p>
-          <div className="grid grid-cols-1 md:grid-cols-4 place-items-center gap-6 px-2">
+          <div
+            id="foodpackages"
+            className="grid grid-cols-1 md:grid-cols-4 place-items-center gap-6 px-2"
+          >
             {foodCardData.map((item) => (
               <FoodPackage
                 key={item.id}
