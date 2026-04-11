@@ -1,20 +1,26 @@
-const readyCakes = [
-  {
-    name: "5 inches Mini Cake",
-    image: "/images/cakes/5inch.jpeg",
-    price: "GH₵ 200",
-    details: "Available on special order",
-  },
-  {
-    name: "6 inches Medium Cake",
-    image: "/images/cakes/6inch.jpeg",
-    price: "GH₵ 300",
-    details: "Available on special order",
-  },
+const kidsCakes = [
   {
     name: "5 inches Cartoon  Cake",
     image: "/images/cakes/7inch.jpeg",
     price: "GH₵ 450",
+    details: "Available on special order",
+  },
+  {
+    name: "Sonic The Hedgehog Cake",
+    image: "/images/cakes/soniccake.webp",
+    price: "GH₵ 450",
+    details: "Available on special order",
+  },
+  {
+    name: "Spider-Man Themed Birthday Cake",
+    image: "/images/cakes/spiderman.webp",
+    price: "GH₵ 650",
+    details: "Available on special order",
+  },
+  {
+    name: "BARBIE Character Cake",
+    image: "/images/cakes/barbiecake.webp",
+    price: "GH₵ 700",
     details: "Available on special order",
   },
   {
@@ -23,18 +29,7 @@ const readyCakes = [
     price: "GH₵ 700",
     details: "Available on special order",
   },
-  {
-    name: "Flower Birthday Cake",
-    image: "/images/cakes/HB.webp",
-    price: "GH₵ 350",
-    details: "Available on special order",
-  },
-  {
-    name: "Super-Hero Themed Birthday Cake",
-    image: "/images/cakes/spiderman.webp",
-    price: "GH₵ 650",
-    details: "Available on special order",
-  },
+
   {
     name: "Barbie Themed Birthday Cake",
     image: "/images/cakes/barbie.webp",
@@ -42,10 +37,10 @@ const readyCakes = [
     details: "Available on special order",
   },
   {
-    name: "Kids Character Cake",
+    name: "Kung-Fu Panda Cake",
     image: "/images/cakes/1100.webp",
     price: "GH₵ 1100",
     details: "Available on special order",
   },
 ];
-export default readyCakes;
+export default kidsCakes;

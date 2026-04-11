@@ -6,7 +6,8 @@ import CakeItem from "../components/item";
 import bentodata from "../data/bentodata";
 import { motion } from "motion/react";
 import foodCardData from "../data/foodcarddata";
-import readyCakes from "../data/readyCakes";
+import kidsCakes from "../data/readyCakes";
+import elegantCakes from "../data/elegant";
 import Lottie from "lottie-react";
 import milkyAnimation from "../assets/doughnutanimation.json";
 
@@ -169,36 +170,6 @@ export default function Menu() {
           Payment confirms Order!
         </motion.p>
       </section>
-      <section id="readycakes" className="py-10 space-y-5 bg-gray-50 ">
-        <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
-          Ready To Go Cakes
-        </h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y  divide-gray-200">
-          {readyCakes.map((item) => (
-            <CakeItem
-              name={item.name}
-              image={item.image}
-              price={item.price}
-              details={item.details}
-            />
-          ))}
-        </div>
-      </section>
-      <section id="bento" className="py-10 space-y-5 bg-gray-50 ">
-        <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
-          Our Bento Packages
-        </h1>
-        <div className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y  divide-gray-200">
-          {bentodata.map((item) => (
-            <CakeItem
-              name={item.name}
-              image={item.image}
-              price={item.price}
-              details={item.details}
-            />
-          ))}
-        </div>
-      </section>
       <section id="milkydoughnuts" className="pb-10 px-6 md:px-16 mt-20">
         <div className="rounded-3xl w-full  h-[20vh] md:h-80  overflow-hidden">
           <Lottie
@@ -226,6 +197,51 @@ export default function Menu() {
             price="GH₵ 180"
             details="Available Only On Wednesdays"
           />
+        </div>
+      </section>
+      <section id="bento" className="py-10 space-y-5 bg-gray-50 ">
+        <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
+          Our Bento Packages
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y  divide-gray-200">
+          {bentodata.map((item) => (
+            <CakeItem
+              name={item.name}
+              image={item.image}
+              price={item.price}
+              details={item.details}
+            />
+          ))}
+        </div>
+      </section>
+      <section id="kids Menu" className="py-10 space-y-5 bg-gray-50 ">
+        <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
+          Party Cakes for Kids
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y  divide-gray-200">
+          {kidsCakes.map((item) => (
+            <CakeItem
+              name={item.name}
+              image={item.image}
+              price={item.price}
+              details={item.details}
+            />
+          ))}
+        </div>
+      </section>
+      <section id="kids Menu" className="py-10 space-y-5 bg-gray-50 ">
+        <h1 className="font-montserrat text-primary font-bold text-center  text-2xl">
+          Simple and Elegant Looking Cakes
+        </h1>
+        <div className="grid grid-cols-2 md:grid-cols-4 mx-2 md:mx-18 border rounded-lg border-gray-200 divide-x divide-y  divide-gray-200">
+          {elegantCakes.map((item) => (
+            <CakeItem
+              name={item.name}
+              image={item.image}
+              price={item.price}
+              details={item.details}
+            />
+          ))}
         </div>
       </section>
 
