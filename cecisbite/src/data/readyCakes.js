@@ -12,8 +12,14 @@ const kidsCakes = [
     details: "Available on special order",
   },
   {
-    name: "Spider-Man Themed Birthday Cake",
+    name: "Spider-Man Birthday Cake",
     image: "/images/cakes/spiderman.webp",
+    price: "GH₵ 650",
+    details: "Available on special order",
+  },
+  {
+    name: "Bluey Birthday Cake",
+    image: "/images/cakes/bluey.webp",
     price: "GH₵ 650",
     details: "Available on special order",
   },
