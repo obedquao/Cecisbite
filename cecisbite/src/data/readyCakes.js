@@ -20,7 +20,7 @@ const kidsCakes = [
   {
     name: "Bluey Birthday Cake",
     image: "/images/cakes/bluey.webp",
-    price: "GH₵ 650",
+    price: "GH₵ 1100",
     details: "Available on special order",
   },
   {
