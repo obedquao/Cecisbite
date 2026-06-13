@@ -1,4 +1,6 @@
 import { IoLocation } from "react-icons/io5";
+import { MdOutlinePhoneAndroid } from "react-icons/md";
+import { IoLogoWhatsapp } from "react-icons/io";
 import { motion } from "motion/react";
 
 export default function Contact() {
@@ -74,7 +76,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="flex flex-col gap-3 justify-center items-center border border-gray-300 rounded-2xl p-5 shadow-lg w-80 h-60"
           >
-            <IoLocation className="text-4xl text-primary mt-2 " />
+            <MdOutlinePhoneAndroid className="text-4xl text-primary mt-2 " />
             <h3 className="text-primary text-xl font-bold font-inter text-center">
               Phone Us
             </h3>
@@ -95,7 +97,7 @@ export default function Contact() {
             viewport={{ once: true }}
             className="flex flex-col gap-3 justify-center items-center border border-gray-300 rounded-2xl p-5 shadow-lg w-80 h-60"
           >
-            <IoLocation className="text-4xl text-primary mt-2 " />
+            <IoLogoWhatsapp className="text-4xl text-primary mt-2 " />
             <h3 className="text-primary text-xl font-bold font-inter text-center">
               WhatsApp Us
             </h3>
